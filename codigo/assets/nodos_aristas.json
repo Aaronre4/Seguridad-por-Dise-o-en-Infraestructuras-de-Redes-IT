@@ -1,0 +1,32 @@
+{
+    "nodes": [
+        {"id": "APLICACION1"},
+        {"id": "APLICACION2"},
+        {"id": "APLICACION3"},
+        {"id": "APLICACION4"},
+        {"id": "APLICACION5"},
+        {"id": "LAN1"},
+		{"id": "LAN2"},
+		{"id": "LAN3"},
+		{"id": "LAN4"},
+		{"id": "INTERFAZ_IP1"},
+		{"id": "INTERFAZ_IP2"},
+		{"id": "INTERFAZ_IP3"},
+		{"id": "INTERFAZ_IP4"}
+    ],
+    "edges": [
+        {"source": "APLICACION1", "target": "INTERFAZ_IP1"},
+		{"source": "APLICACION2", "target": "INTERFAZ_IP2"},
+		{"source": "APLICACION3", "target": "INTERFAZ_IP3"},
+		{"source": "APLICACION4", "target": "INTERFAZ_IP4"},
+		{"source": "APLICACION5", "target": "LAN1"},
+		{"source": "INTERFAZ_IP1", "target": "LAN3"},
+		{"source": "INTERFAZ_IP2", "target": "LAN3"},
+		{"source": "INTERFAZ_IP3", "target": "LAN4"},
+		{"source": "INTERFAZ_IP4", "target": "LAN4"},
+		{"source": "LAN1", "target": "LAN2"},
+		{"source": "LAN1", "target": "LAN3"},
+		{"source": "LAN2", "target": "LAN4"},
+		{"source": "LAN3", "target": "LAN4"}
+    ]
+}
